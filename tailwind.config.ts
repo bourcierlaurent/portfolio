@@ -1,19 +1,91 @@
 import type { Config } from "tailwindcss";
 
 const config: Config = {
-  content: [
-    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./app/**/*.{js,ts,jsx,tsx,mdx}",
-  ],
-  theme: {
-    extend: {
-      colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
-      },
-    },
-  },
-  plugins: [],
+	darkMode: ["class"],
+	content: [
+		"./pages/**/*.{js,ts,jsx,tsx,mdx}",
+		"./components/**/*.{js,ts,jsx,tsx,mdx}",
+		"./app/**/*.{js,ts,jsx,tsx,mdx}",
+	],
+	theme: {
+		extend: {
+			fontFamily: {
+				Poppins: ["Poppins"],
+				Caveat: ["caveat"],
+				Quicksand: ["Quicksand"],
+			},
+
+			gridTemplateColumns: {
+				"auto-fill-44": "repeat(auto-fill, minmax(10rem, 1fr))",
+				"auto-fit-44": "repeat(auto-fit, minmax(10rem, 1fr))",
+				"auto-fill-64": "repeat(auto-fill, minmax(16rem, 1fr))",
+				"auto-fit-64": "repeat(auto-fit, minmax(16rem, 1fr))",
+				"auto-fill-96": "repeat(auto-fill, minmax(24rem, 1fr))",
+				"auto-fit-96": "repeat(auto-fit, minmax(24rem, 1fr))",
+				"auto-fill-100": "repeat(auto-fill, minmax(100px, 1fr))",
+				"auto-fit-100": "repeat(auto-fit, minmax(100px, 1fr))",
+				"auto-fill-200": "repeat(auto-fill, minmax(200px, 1fr))",
+				"auto-fit-200": "repeat(auto-fit, minmax(200px, 1fr))",
+				"auto-fill-288": "repeat(auto-fill, minmax(288px, 1fr))",
+				"auto-fit-288": "repeat(auto-fit, minmax(288px, 1fr))",
+				"auto-fill-1000": "repeat(auto-fill, minmax(1000px, 1fr))",
+				"auto-fit-1000": "repeat(auto-fit, minmax(1000px, 1fr))",
+			},
+			width: {
+				90: "90%",
+				98: "98%",
+				100: "30rem",
+				150: "45rem",
+				200: "60rem",
+				300: "90rem",
+				400: "120rem",
+				"7xl": "80rem",
+			},
+			maxWidth: {
+				90: "90%",
+				98: "98%",
+				100: "30rem",
+				150: "45rem",
+				200: "60rem",
+				300: "90rem",
+				400: "120rem",
+			},
+			minWidth: {
+				90: "90%",
+				98: "98%",
+				100: "30rem",
+				150: "45rem",
+				200: "60rem",
+				300: "90rem",
+				400: "120rem",
+			},
+			height: {
+				90: "90%",
+				98: "98%",
+				100: "30rem",
+				150: "45rem",
+				200: "60rem",
+				300: "90rem",
+				400: "120rem",
+			},
+			maxHeight: {
+				90: "90vh",
+				100: "30rem",
+				150: "40rem",
+				200: "60rem",
+				300: "90rem",
+				400: "120rem",
+			},
+			minHeight: {
+				90: "90vh",
+				100: "30rem",
+				150: "40rem",
+				200: "60rem",
+				300: "90rem",
+				400: "120rem",
+			},
+		},
+	},
+	plugins: [require("daisyui")],
 };
 export default config;
