@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
-import { Button } from "@components/ui/button";
 import { Typewriter } from "@components/typeWriter";
+import { HireMe } from "@components/ui/hireMe";
 
 export const Hero = () => {
 	return (
@@ -14,9 +14,9 @@ export const Hero = () => {
 				className="w-60 h-60 bg-orange-500 rounded-full shadow-lg drop-shadow-lg"
 			/>
 			<h1 className="mt-6 text-4xl font-light font-Caveat lg:text-6xl tracking-widest">
-				<Typewriter text="Laurent     BOURCIER" />
+				<Typewriter text="Laurent BOURCIER" />
 			</h1>
-			<div className="mt-6 flex flex-col items-center gap-4 lg:flex-row">
+			<div className="mt-6 flex flex-col items-center gap-4 md:flex-row">
 				<a
 					href="https://github.com/bourcierlaurent"
 					target="_blank"
@@ -37,23 +37,15 @@ export const Hero = () => {
 				</a>
 			</div>
 			<p className="mt-6 text-md lg:text-lg max-w-4xl">
-				Développeur web full-stack dynamique et passionné, je m'engage à transformer des idées innovantes en
-				solutions numériques performantes. Fort d'une expérience solide dans la conception et le développement
-				d'applications, je suis toujours à la recherche de nouveaux défis pour enrichir mes compétences. Mon
-				objectif est de créer des expériences utilisateur intuitives et engageantes tout en respectant les
-				meilleures pratiques de développement. Ensemble, faisons passer votre projet au niveau supérieur !
+				Développeur web full-stack dynamique et passionné, je m&apos;engage à transformer des idées innovantes
+				en solutions numériques performantes. Fort d&apos;une expérience solide dans la conception et le
+				développement d&apos;applications, je suis toujours à la recherche de nouveaux défis pour enrichir mes
+				compétences. Mon objectif est de créer des expériences utilisateur intuitives et engageantes tout en
+				respectant les meilleures pratiques de développement. Ensemble, faisons passer votre projet au niveau
+				supérieur !
 			</p>
-			<div className="mt-6 flex flex-col items-center gap-4 lg:flex-row">
-				<Button className="bg-orange-500 text-white px-6 py-3 rounded-full hover:bg-orange-600">
-					Engagez-moi
-				</Button>
-				<Button
-					variant="outline"
-					className="border border-orange-400 text-orange-400 px-6 py-3 rounded-full hover:bg-orange-600 hover:text-white transition-all duration-300"
-				>
-					Voir les projets
-				</Button>
-			</div>
+
+			<HireMe />
 		</section>
 	);
 };

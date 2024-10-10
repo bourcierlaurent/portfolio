@@ -1,6 +1,15 @@
 import { ApolloClient, InMemoryCache, gql } from "@apollo/client";
 import { GithubContributions } from "@components/githubContributions";
 
+type ContributionDay = {
+	contributionCount: number;
+	date: string;
+};
+
+type ContributionWeek = {
+	contributionDays: ContributionDay[];
+};
+
 const fetchData = async () => {
 	const client = new ApolloClient({
 		uri: "https://api.github.com/graphql",
@@ -35,10 +44,10 @@ const fetchData = async () => {
 			variables: { login: username },
 		});
 
-		const weeks = data.user.contributionsCollection.contributionCalendar.weeks;
+		const weeks: ContributionWeek[] = data.user.contributionsCollection.contributionCalendar.weeks;
 
-		const contributions = weeks.flatMap((week: any) =>
-			week.contributionDays.map((day: any) => ({
+		const contributions = weeks.flatMap((week) =>
+			week.contributionDays.map((day) => ({
 				date: day.date.split("T")[0],
 				count: day.contributionCount,
 			}))
@@ -61,9 +70,9 @@ export const GithubServer = async () => {
 					Mon Engagement <span className="text-orange-400 font-extrabold">GitHub</span>
 				</h2>
 				<p className="my-4 text-gray-600 dark:text-gray-300 leading-relaxed text-lg max-w-2xl">
-					En tant que développeur passionné, mes contributions sur GitHub reflètent l'effort continu que je
-					consacre à mes projets personnels et professionnels. Je m'efforce de maintenir une activité
-					régulière, d'améliorer la qualité de mon code et de proposer des solutions toujours plus
+					En tant que développeur passionné, mes contributions sur GitHub reflètent l&apos;effort continu que
+					je consacre à mes projets personnels et professionnels. Je m&apos;efforce de maintenir une activité
+					régulière, d&apos;améliorer la qualité de mon code et de proposer des solutions toujours plus
 					performantes.
 				</p>
 				{data ? (

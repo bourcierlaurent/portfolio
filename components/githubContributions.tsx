@@ -26,7 +26,7 @@ export const GithubContributions: React.FC<GithubContributionsProps> = ({ contri
 
 	const variants = {
 		initial: { scale: 1, y: 0, opacity: 0 },
-		animated: (i: number) => ({
+		animated: () => ({
 			scale: [1, 1.3, 1],
 			y: [0, -10, 0],
 			opacity: 1,

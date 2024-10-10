@@ -7,19 +7,19 @@ export const About = () => {
 				<h4 className="text-3xl mb-6 text-center lg:text-left">À Propos de Moi</h4>
 				<p className="text-lg max-w-2xl leading-relaxed mx-auto">
 					Passionné par le développement web, je suis un développeur full-stack avec une solide expérience
-					dans la création d'applications web dynamiques et intuitives. J'aime transformer des idées en
-					solutions numériques efficaces. Avec une formation en développement web et une expertise diversifiée
-					dans des technologies telles que HTML, CSS, JavaScript, TypeScript, React, Next.js et Node.js, je
-					suis capable de concevoir des applications robustes et performantes.
+					dans la création d&apos;applications web dynamiques et intuitives. J&apos;aime transformer des idées
+					en solutions numériques efficaces. Avec une formation en développement web et une expertise
+					diversifiée dans des technologies telles que HTML, CSS, JavaScript, TypeScript, React, Next.js et
+					Node.js, je suis capable de concevoir des applications robustes et performantes.
 				</p>
 				<p className="text-lg max-w-2xl leading-relaxed mx-auto mt-4">
 					Mes projets reflètent mon engagement à fournir un travail de qualité et à respecter les délais. Je
-					crois fermement en l'importance de la collaboration et de la communication au sein des équipes, ce
-					qui me permet de m'adapter facilement à différents environnements de travail. En dehors des projets
-					professionnels, je suis constamment en quête de nouveaux défis et d'opportunités d'apprentissage
-					pour enrichir mes compétences. Mon objectif est de créer des expériences utilisateur intuitives et
-					engageantes, tout en respectant les meilleures pratiques de développement. Ensemble, faisons passer
-					votre projet au niveau supérieur !
+					crois fermement en l&apos;importance de la collaboration et de la communication au sein des équipes,
+					ce qui me permet de m&apos;adapter facilement à différents environnements de travail. En dehors des
+					projets professionnels, je suis constamment en quête de nouveaux défis et d&apos;opportunités
+					d&apos;apprentissage pour enrichir mes compétences. Mon objectif est de créer des expériences
+					utilisateur intuitives et engageantes, tout en respectant les meilleures pratiques de développement.
+					Ensemble, faisons passer votre projet au niveau supérieur !
 				</p>
 			</div>
 			<div id="testimonials">

@@ -36,15 +36,16 @@ export const LastProjects = () => {
 					<div className="w-full lg:w-2/3 text-left">
 						<h4 className="text-2xl font-bold mb-2">Les Ruchers d&apos;Ambroise</h4>
 						<p className="leading-relaxed mb-4">
-							Ce site a été conçu pour mettre en valeur les produits artisanaux des Ruchers d'Ambroise,
-							une apiculture raisonnée dans les Hautes-Pyrénées. L'objectif était de créer une vitrine
-							numérique attrayante permettant aux clients de découvrir et d'acheter du miel et autres
-							produits tout en mettant en avant les valeurs écoresponsables de l'entreprise.
+							Ce site a été conçu pour mettre en valeur les produits artisanaux des Ruchers
+							d&apos;Ambroise, une apiculture raisonnée dans les Hautes-Pyrénées. L&apos;objectif était de
+							créer une vitrine numérique attrayante permettant aux clients de découvrir et d&apos;acheter
+							du miel et autres produits tout en mettant en avant les valeurs écoresponsables de
+							l&apos;entreprise.
 						</p>
 						<p className="leading-relaxed">
 							<span className="font-semibold text-orange-500">Technologies utilisées :</span>
-							<br /> Next.js, Tailwind CSS, Zustand, Sharp, React Icons, et bcrypt pour l'authentification
-							sécurisée.
+							<br /> Next.js, Tailwind CSS, Zustand, Sharp, React Icons, et bcrypt pour
+							l&apos;authentification sécurisée.
 						</p>
 					</div>
 				</div>
@@ -63,10 +64,10 @@ export const LastProjects = () => {
 					<div className="w-full lg:w-2/3 text-left">
 						<h4 className="text-2xl font-bold mb-2">2B Agency</h4>
 						<p className="leading-relaxed mb-4">
-							Développement du site pour l'agence 2B, spécialisée dans la création de sites internet et le
-							marketing digital. Ce projet visait à créer une plateforme professionnelle pour mettre en
-							avant les services de l'agence et attirer de nouveaux clients grâce à une présentation
-							moderne et engageante.
+							Développement du site pour l&apos;agence 2B, spécialisée dans la création de sites internet
+							et le marketing digital. Ce projet visait à créer une plateforme professionnelle pour mettre
+							en avant les services de l&apos;agence et attirer de nouveaux clients grâce à une
+							présentation moderne et engageante.
 						</p>
 						<p className="leading-relaxed">
 							<span className="font-semibold text-orange-500">Technologies utilisées :</span>
@@ -92,7 +93,7 @@ export const LastProjects = () => {
 						<p className="leading-relaxed mb-4">
 							Application de gestion de commandes et de stock, intégrant un tableau de bord interactif
 							pour le suivi des ventes et des performances. Le projet permet également la création de
-							nouvelles commandes et la gestion de l'historique des transactions.
+							nouvelles commandes et la gestion de l&apos;historique des transactions.
 						</p>
 						<p className="leading-relaxed">
 							<span className="font-semibold text-orange-500">Technologies utilisées :</span>
