@@ -55,20 +55,25 @@ export const GithubServer = async () => {
 	const data = await fetchData();
 
 	return (
-		<div className="flex flex-col">
-			<h3 className="text-3xl font-bold tracking-wide text-gray-800 dark:text-white">Mon Engagement GitHub</h3>
-			<p className="my-4 text-gray-600 dark:text-gray-300 leading-relaxed text-lg max-w-2xl">
-				En tant que développeur passionné, mes contributions sur GitHub reflètent l'effort continu que je
-				consacre à mes projets personnels et professionnels. Je m'efforce de maintenir une activité régulière,
-				d'améliorer la qualité de mon code et de proposer des solutions toujours plus performantes.
-			</p>
-			{data ? (
-				<div className="lg:col-span-2">
-					<GithubContributions contributions={data} />
-				</div>
-			) : (
-				<div className="text-center text-gray-500 dark:text-gray-300">Aucune donnée disponible</div>
-			)}
-		</div>
+		<section className="mx-auto w-7xl max-w-90">
+			<div className="flex flex-col">
+				<h2 className="text-3xl tracking-wide text-gray-800 dark:text-white">
+					Mon Engagement <span className="text-orange-400 font-extrabold">GitHub</span>
+				</h2>
+				<p className="my-4 text-gray-600 dark:text-gray-300 leading-relaxed text-lg max-w-2xl">
+					En tant que développeur passionné, mes contributions sur GitHub reflètent l'effort continu que je
+					consacre à mes projets personnels et professionnels. Je m'efforce de maintenir une activité
+					régulière, d'améliorer la qualité de mon code et de proposer des solutions toujours plus
+					performantes.
+				</p>
+				{data ? (
+					<div className="lg:col-span-2">
+						<GithubContributions contributions={data} />
+					</div>
+				) : (
+					<div className="text-center text-gray-500 dark:text-gray-300">Aucune donnée disponible</div>
+				)}
+			</div>
+		</section>
 	);
 };
